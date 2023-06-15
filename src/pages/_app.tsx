@@ -17,7 +17,6 @@ export default function App({ Component, pageProps }: AppProps) {
           <S.TextMD>Exercita.ai</S.TextMD>
         </S.HeaderLogo>
         <S.HeaderButtons>
-          <S.TextSM>Perguntas frequentes</S.TextSM>
           <S.GoogleBtn>
           <Image src={googleIco} alt="logo img" />
             <S.TextSM>Login</S.TextSM>

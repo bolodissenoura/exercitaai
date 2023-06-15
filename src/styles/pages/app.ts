@@ -22,7 +22,6 @@ export const HeaderLogo = styled("div", {
   gap: 12,
   textAlign: "center",
   alignItems: "center",
-  marginLeft: "3.625rem",
 });
 
 export const HeaderButtons = styled("div", {
@@ -32,27 +31,6 @@ export const HeaderButtons = styled("div", {
   gap: 12,
   textAlign: "center",
   alignItems: "center",
-  marginRight: "3.625rem",
-});
-
-export const TextMD = styled("h2", {
-  fontSize: "$xl",
-  fontWeight: "700",
-  fontFamily: "Montserrat",
-  color: "$white",
-});
-
-export const TextSM = styled("h2", {
-  fontSize: "$sm",
-  fontWeight: "300",
-  fontFamily: "Montserrat",
-  color: "$white",
-});
-
-export const SubtitleSM = styled("p", {
-  fontSize: "$sm",
-  fontWeight: "normal",
-  color: "$primary900",
 });
 
 export const GoogleBtn = styled("button", {

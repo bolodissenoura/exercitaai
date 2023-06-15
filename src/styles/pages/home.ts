@@ -12,7 +12,6 @@ export const HomeContainer = styled("main", {
 
 export const TextGridContainer = styled("div", {
   width: "100%",
-  height: "80vh",
   display: "flex",
   gap: 8,
   flexDirection: "column",
@@ -21,4 +20,12 @@ export const TextGridContainer = styled("div", {
     textAlign: "left",
     padding: "30px",
   },
+});
+
+export const ImageGridContainer = styled("div", {
+  width: "100%",
+  display: "flex",
+  textAlign: "center",
+  justifyContent: "center",
+  alignContent: "center",
 });

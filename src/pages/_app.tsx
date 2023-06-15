@@ -6,6 +6,7 @@ import googleIco from "../../public/assets/googleIco.svg";
 import Image from "next/image";
 import * as S from "../styles/pages/app";
 import { TextMD, TextSM } from "@/styles/typography";
+import { PrimaryBtn } from "@/styles/buttons";
 
 globalStyles();
 
@@ -18,10 +19,10 @@ export default function App({ Component, pageProps }: AppProps) {
           <TextMD>Exercita.ai</TextMD>
         </S.HeaderLogo>
         <S.HeaderButtons>
-          <S.GoogleBtn>
+          <PrimaryBtn>
             <Image src={googleIco} alt="logo img" />
             <TextSM>Login</TextSM>
-          </S.GoogleBtn>
+          </PrimaryBtn>
         </S.HeaderButtons>
       </S.Header>
       <Component {...pageProps} />

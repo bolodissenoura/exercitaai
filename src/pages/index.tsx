@@ -1,6 +1,9 @@
 import Head from "next/head";
 import * as S from "../styles/pages/home";
+import bgImg from "../../public/assets/bg-img.png";
+import Image from "next/image";
 import { TextMD, TypographyV1, TypographyV2 } from "@/styles/typography";
+import { PrimaryBtn } from "@/styles/buttons";
 
 export default function Home() {
   return (
@@ -24,8 +27,11 @@ export default function Home() {
             A resposta para todas <br /> as suas perguntas <br /> está a um
             clique <br /> de distância!
           </TypographyV2>
+          <PrimaryBtn style={{ margin: "0 auto" }}>Testar agora</PrimaryBtn>
         </S.TextGridContainer>
-        <S.TextGridContainer></S.TextGridContainer>
+        <S.ImageGridContainer>
+          <Image src={bgImg} height={350} width={350} alt="logo img" />
+        </S.ImageGridContainer>
       </S.HomeContainer>
     </>
   );

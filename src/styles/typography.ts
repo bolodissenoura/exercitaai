@@ -44,3 +44,10 @@ export const SubtitleSM = styled("p", {
   fontWeight: "normal",
   color: "$primary900",
 });
+
+export const ConditionalRender = styled("div", {
+  display: "auto",
+  "@media screen and (max-width: 992px)": {
+    display: "none",
+  },
+});

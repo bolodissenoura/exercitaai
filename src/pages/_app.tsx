@@ -5,7 +5,7 @@ import logoImg from "../../public/assets/logo.svg";
 import googleIco from "../../public/assets/googleIco.svg";
 import Image from "next/image";
 import * as S from "../styles/pages/app";
-import { TextMD, TextSM } from "@/styles/typography";
+import { ConditionalRender, TextMD, TextSM } from "@/styles/typography";
 import { PrimaryBtn } from "@/styles/buttons";
 
 globalStyles();
@@ -21,7 +21,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <S.HeaderButtons>
           <PrimaryBtn>
             <Image src={googleIco} alt="logo img" />
-            <TextSM>Login</TextSM>
+            <ConditionalRender>
+              <TextSM>Login</TextSM>
+            </ConditionalRender>
           </PrimaryBtn>
         </S.HeaderButtons>
       </S.Header>

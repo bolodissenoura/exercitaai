@@ -3,9 +3,8 @@ import { styled } from ".";
 export const PrimaryBtn = styled("button", {
   backgroundColor: "$purple700",
   borderRadius: "1.5rem",
-  width: "9.8125rem",
-  height: "3.25rem",
   display: "flex",
+  padding: 10,
   justifyContent: "center",
   gap: 12,
   alignItems: "center",
@@ -23,5 +22,6 @@ export const PrimaryBtn = styled("button", {
     alignItems: "left",
     margin: "2rem 0",
     width: "15rem",
+    height: "3.25rem",
   },
 });

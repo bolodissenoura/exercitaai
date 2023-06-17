@@ -29,7 +29,7 @@ export default function Home() {
             #1 IA desenvolvida para resolução de questões de provas pensado 100%
             em brasileiros 🇧🇷
           </TypographyV1>
-          <TypographyV2>
+          <TypographyV2 style={{ marginTop: "1.25rem" }}>
             A resposta para todas <br /> as suas perguntas <br /> está a um
             clique <br /> de distância!
           </TypographyV2>

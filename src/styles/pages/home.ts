@@ -16,6 +16,7 @@ export const TextGridContainer = styled("div", {
   gap: 8,
   flexDirection: "column",
   textAlign: "center",
+  marginTop: "2.50rem",
   "@bp2": {
     textAlign: "left",
     padding: "30px",
@@ -44,6 +45,7 @@ export const Box = styled("div", {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  margin: "60px 10px",
 });
 
 export const WhiteBox = styled("div", {

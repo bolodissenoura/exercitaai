@@ -10,6 +10,7 @@ export const Header = styled("main", {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
+  alignContent: "center",
   width: "100%",
   height: "92px",
 });
@@ -21,7 +22,8 @@ export const HeaderLogo = styled("div", {
   justifyContent: "center",
   gap: 12,
   alignItems: "center",
-  marginLeft: 30,
+  marginTop: 4,
+  marginLeft: 10,
   "@bp2": {
     marginLeft: 60,
   },

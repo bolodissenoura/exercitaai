@@ -33,7 +33,7 @@ export default function Home() {
             A resposta para todas <br /> as suas perguntas <br /> está a um
             clique <br /> de distância!
           </TypographyV2>
-          <PrimaryBtn style={{ margin: "0 auto" }}>Testar agora</PrimaryBtn>
+          <PrimaryBtn>Testar agora</PrimaryBtn>
         </S.TextGridContainer>
         <S.BoxGridContainer>
           <S.Box>

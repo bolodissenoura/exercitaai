@@ -1,8 +1,14 @@
 import Head from "next/head";
 import * as S from "../styles/pages/home";
-import bgImg from "../../public/assets/bg-img.png";
+import camIco from "../../public/assets/camIco.svg";
+import sendIco from "../../public/assets/sendIco.svg";
 import Image from "next/image";
-import { TextMD, TypographyV1, TypographyV2 } from "@/styles/typography";
+import {
+  TextMD,
+  TypographyV1,
+  TypographyV2,
+  TypographyV3,
+} from "@/styles/typography";
 import { PrimaryBtn } from "@/styles/buttons";
 
 export default function Home() {
@@ -29,15 +35,40 @@ export default function Home() {
           </TypographyV2>
           <PrimaryBtn style={{ margin: "0 auto" }}>Testar agora</PrimaryBtn>
         </S.TextGridContainer>
-        <S.ImageGridContainer>
-          <Image
-            className="img"
-            src={bgImg}
-            height={350}
-            width={350}
-            alt="logo img"
-          />
-        </S.ImageGridContainer>
+        <S.BoxGridContainer>
+          <S.Box>
+            <S.WhiteBox>
+              <form
+                style={{
+                  margin: "30px",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  height: "80%",
+                }}>
+                <TypographyV3
+                  style={{
+                    color: "rgba(126, 126, 126, 1)",
+                  }}>
+                  Capture ✨qualquer✨ exercício com sua câmera ou digite-o aqui
+                  e veja a mágica acontecer.
+                </TypographyV3>
+                <div
+                  style={{
+                    display: "flex",
+                  }}>
+                  <S.ButtonCamera onClick={() => alert("abrir camera")}>
+                    <Image style={{ marginRight: 6 }} src={camIco} alt="" />
+                  </S.ButtonCamera>
+                  <S.InputQuest />
+                  <S.ButtonSend type="submit">
+                    <Image style={{ marginRight: 6 }} src={sendIco} alt="" />
+                  </S.ButtonSend>
+                </div>
+              </form>
+            </S.WhiteBox>
+          </S.Box>
+        </S.BoxGridContainer>
       </S.HomeContainer>
     </>
   );

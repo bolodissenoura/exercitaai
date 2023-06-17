@@ -29,6 +29,8 @@ export const {
       //gradients
       gradientBgPurple:
         "linear-gradient(174.43deg, #261945 0.65%, #1E2128 49.46%, #171B1D 99.3%)",
+      gradientButtonPurple:
+        "linear-gradient(135.17deg, #7907D5 -54.16%, #A16AFA 141.67%)",
     },
 
     fontSizes: {

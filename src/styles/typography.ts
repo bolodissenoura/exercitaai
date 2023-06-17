@@ -15,6 +15,16 @@ export const TypographyV2 = styled("p", {
   color: "$white",
 });
 
+export const TypographyV3 = styled("p", {
+  fontSize: "$md",
+  fontWeight: "500",
+  fontFamily: "Montserrat",
+  color: "$white",
+  lineHeigth: "17px",
+  letterSpacing: "0em",
+  textAlign: "left",
+});
+
 export const TextMD = styled("h2", {
   fontSize: "$xl",
   fontWeight: "700",

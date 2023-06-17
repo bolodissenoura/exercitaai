@@ -30,7 +30,13 @@ export default function Home() {
           <PrimaryBtn style={{ margin: "0 auto" }}>Testar agora</PrimaryBtn>
         </S.TextGridContainer>
         <S.ImageGridContainer>
-          <Image src={bgImg} height={350} width={350} alt="logo img" />
+          <Image
+            className="img"
+            src={bgImg}
+            height={350}
+            width={350}
+            alt="logo img"
+          />
         </S.ImageGridContainer>
       </S.HomeContainer>
     </>

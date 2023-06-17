@@ -1,11 +1,11 @@
 import { styled } from "..";
 
 export const HomeContainer = styled("main", {
-  width: "100%",
   height: "100vh",
   background: "$gradientBgPurple",
   paddingTop: "100px",
   "@bp2": {
+    paddingLeft: 60,
     display: "flex",
   },
 });
@@ -28,4 +28,10 @@ export const ImageGridContainer = styled("div", {
   textAlign: "center",
   justifyContent: "center",
   alignContent: "center",
+  ".img": {
+    "@bp2": {
+      width: "500px",
+      height: "350px",
+    },
+  },
 });

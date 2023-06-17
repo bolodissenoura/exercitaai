@@ -20,15 +20,20 @@ export const HeaderLogo = styled("div", {
   display: "flex",
   justifyContent: "center",
   gap: 12,
-  textAlign: "center",
   alignItems: "center",
+  marginLeft: 30,
+  "@bp2": {
+    marginLeft: 60,
+  },
 });
 
 export const HeaderButtons = styled("div", {
   height: "100%",
   display: "flex",
-  justifyContent: "center",
   gap: 12,
-  textAlign: "center",
   alignItems: "center",
+  marginRight: 30,
+  "@bp2": {
+    marginRight: 60,
+  },
 });

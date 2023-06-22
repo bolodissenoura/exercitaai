@@ -13,6 +13,9 @@ export const Header = styled("main", {
   alignContent: "center",
   width: "100%",
   height: "92px",
+  zIndex: "999",
+  boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+  backdropFilter: "blur(3.1px)",
 });
 
 export const HeaderLogo = styled("div", {

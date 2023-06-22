@@ -31,7 +31,7 @@ export default function Home() {
     },
     slides: {
       perView: 1,
-      spacing: 32,
+      spacing: 16,
     },
     breakpoints: {
       "(min-width: 800px)": {

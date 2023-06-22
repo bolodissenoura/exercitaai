@@ -7,13 +7,34 @@ import Image from "next/image";
 import * as S from "../styles/pages/app";
 import { ConditionalRender, TextMD, TextSM } from "@/styles/typography";
 import { PrimaryBtn } from "@/styles/buttons";
+import React from "react";
 
 globalStyles();
 
 export default function App({ Component, pageProps }: AppProps) {
+  const [backgroundColor, setBackgroundColor] = React.useState("transparent");
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      // Calculate the scroll position and determine the background color based on it
+      const scrollPosition = window.scrollY;
+      const newColor = scrollPosition > 100 ? "rgba(121, 7, 213, 0.3)" : "transparent";
+
+      setBackgroundColor(newColor);
+    };
+
+    // Attach the scroll event listener when the component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <S.Container>
-      <S.Header>
+      <S.Header style={{ background: backgroundColor }}>
         <S.HeaderLogo>
           <Image src={logoImg} alt="logo img" />
           <TextMD>Exercita.ai</TextMD>

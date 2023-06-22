@@ -1,9 +1,11 @@
 import { styled } from "..";
 
 export const HomeContainer = styled("main", {
-  height: "100vh",
   background: "$gradientBgPurple",
-  paddingTop: "100px",
+});
+
+export const HomeContainerFlex = styled("main", {
+  paddingTop: "150px",
   "@bp2": {
     paddingLeft: 60,
     display: "flex",
@@ -109,4 +111,20 @@ export const ButtonSend = styled("button", {
     opacity: 0.9,
     cursor: "pointer",
   },
+});
+
+export const SectionCaroussel = styled("div", {
+  width: "100%",
+  height: "100vh",
+  marginTop: 80,
+});
+
+export const SectionCarousselText = styled("div", {
+  width: "100%",
+  display: "flex",
+  flexDirection: "column",
+  gap: 8,
+  justifyContent: "center",
+  alignContent: "center",
+  textAlign: "center",
 });

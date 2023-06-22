@@ -113,13 +113,12 @@ export const ButtonSend = styled("button", {
   },
 });
 
-export const SectionCaroussel = styled("div", {
+export const NewSection = styled("div", {
   width: "100%",
-  height: "100vh",
   marginTop: 80,
 });
 
-export const SectionCarousselText = styled("div", {
+export const NewSectionText = styled("div", {
   width: "100%",
   display: "flex",
   flexDirection: "column",

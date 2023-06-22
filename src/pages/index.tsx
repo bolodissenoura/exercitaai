@@ -101,11 +101,11 @@ export default function Home() {
             </S.Box>
           </S.BoxGridContainer>
         </S.HomeContainerFlex>
-        <S.SectionCaroussel>
-          <S.SectionCarousselText>
+        <S.NewSection>
+          <S.NewSectionText>
             <TypographyV2>Já são milhares de questões resolvidas</TypographyV2>
             <TypographyV1>De diversas matérias</TypographyV1>
-          </S.SectionCarousselText>
+          </S.NewSectionText>
           <S.BoxCaroussel ref={sliderRef} className="keen-slider">
             {subjects?.map((item) => (
               <>
@@ -116,7 +116,20 @@ export default function Home() {
               </>
             ))}
           </S.BoxCaroussel>
-        </S.SectionCaroussel>
+        </S.NewSection>
+        <S.NewSection>
+          <S.NewSectionText>
+            <TypographyV2
+              style={{
+                background: "linear-gradient(to right, #039736, #FECE40, #4D90FF 80%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}>
+              Treinada com diversos conteúdos e materiais Brasiliero
+            </TypographyV2>
+            <TypographyV1>De diversas matérias</TypographyV1>
+          </S.NewSectionText>
+        </S.NewSection>
       </S.HomeContainer>
     </>
   );

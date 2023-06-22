@@ -76,6 +76,9 @@ export default function Home() {
             <TypographyV2>Já são milhares de questões resolvidas</TypographyV2>
             <TypographyV1>De diversas matérias</TypographyV1>
           </S.SectionCarousselText>
+          <S.BoxCaroussel>
+            
+          </S.BoxCaroussel>
         </S.SectionCaroussel>
       </S.HomeContainer>
     </>

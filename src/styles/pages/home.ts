@@ -127,4 +127,14 @@ export const SectionCarousselText = styled("div", {
   justifyContent: "center",
   alignContent: "center",
   textAlign: "center",
+  marginBottom: "2rem",
+});
+
+export const BoxCaroussel = styled("div", {
+  width: "90%",
+  margin: "0 auto",
+  height: "165px",
+  background: "$gradientButtonPurple",
+  boxShadow: "rgba(121, 7, 213, 1) 0px 8px 29px 0px",
+  borderRadius: 8,
 });

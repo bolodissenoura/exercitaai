@@ -134,7 +134,18 @@ export const BoxCaroussel = styled("div", {
   width: "80% !important",
   margin: "0 auto",
   height: "165px",
+  padding: 8,
+  display: "flex",
+  alignItems: "center",
   background: "$gradientButtonPurple",
   boxShadow: "rgba(121, 7, 213, 1) 0px 8px 29px 0px",
+  borderRadius: 8,
+});
+
+export const ItemCaroussel = styled("div", {
+  height: "78px !important",
+  minHeight: "10px !important",
+  background: "$gradientButtonBlue",
+  boxShadow: "$gradientButtonBlue 0px 8px 29px 0px",
   borderRadius: 8,
 });

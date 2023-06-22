@@ -94,17 +94,12 @@ export default function Home() {
             <TypographyV1>De diversas matérias</TypographyV1>
           </S.SectionCarousselText>
           <S.BoxCaroussel ref={sliderRef} className="keen-slider">
-            <div className="keen-slider__slide">oi</div>
-            <div className="keen-slider__slide">oi</div>
-            <div className="keen-slider__slide">oi</div>
-            <div className="keen-slider__slide">oi</div>
-            <div className="keen-slider__slide">oi</div>
-            <div className="keen-slider__slide">oi</div>
-            <div className="keen-slider__slide">oi</div>
-            <div className="keen-slider__slide">oi</div>
-            <div className="keen-slider__slide">oi</div>
-            <div className="keen-slider__slide">oi</div>
-            <div className="keen-slider__slide">oi</div>
+            <S.ItemCaroussel className="keen-slider__slide">oi</S.ItemCaroussel>
+            <S.ItemCaroussel className="keen-slider__slide">oi</S.ItemCaroussel>
+            <S.ItemCaroussel className="keen-slider__slide">oi</S.ItemCaroussel>
+            <S.ItemCaroussel className="keen-slider__slide">oi</S.ItemCaroussel>
+            <S.ItemCaroussel className="keen-slider__slide">oi</S.ItemCaroussel>
+            <S.ItemCaroussel className="keen-slider__slide">oi</S.ItemCaroussel>
           </S.BoxCaroussel>
         </S.SectionCaroussel>
       </S.HomeContainer>

@@ -119,15 +119,36 @@ export default function Home() {
         </S.NewSection>
         <S.NewSection>
           <S.NewSectionText>
-            <TypographyV2
-              style={{
-                background: "linear-gradient(to right, #039736, #FECE40, #4D90FF 80%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }}>
-              Treinada com diversos conteúdos e materiais Brasiliero
-            </TypographyV2>
-            <TypographyV1>De diversas matérias</TypographyV1>
+            <div>
+              <TypographyV2
+                style={{
+                  background:
+                    "linear-gradient(to right, #039736, #FECE40, #4D90FF 80%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}>
+                Treinada com diversos conteúdos e materiais Brasiliero
+              </TypographyV2>
+              <TypographyV2>🇧🇷</TypographyV2>
+            </div>
+          </S.NewSectionText>
+          <S.NewSectionText>
+            <TypographyV1 style={{ color: "white" }}>
+              Nossa IA fornece respostas precisas e confiáveis para suas
+              questões de provas. <br />
+              <br />
+              <TypographyV1>
+                Treinada com diversos dados de provas, incluindo vestibulares,
+                concursos públicos e o ENEM.
+              </TypographyV1>
+              <br />
+              Nossa IA simplifica sua preparação, impulsionando seu desempenho e
+              oferecendo uma vantagem competitiva.
+              <br />
+              <br />
+              <br />
+              <br />
+            </TypographyV1>
           </S.NewSectionText>
         </S.NewSection>
       </S.HomeContainer>

@@ -15,7 +15,19 @@ import {
 import { PrimaryBtn } from "@/styles/buttons";
 
 export default function Home() {
+  const animation = { duration: 80000, easing: (t: number) => t };
   const [sliderRef] = useKeenSlider({
+    loop: true,
+    renderMode: "performance",
+    created(s) {
+      s.moveToIdx(5, true, animation);
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
     slides: {
       perView: 1,
       spacing: 32,

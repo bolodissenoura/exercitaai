@@ -13,6 +13,7 @@ import {
   TypographyV3,
 } from "@/styles/typography";
 import { PrimaryBtn } from "@/styles/buttons";
+import { subjects } from "@/utils/fakeData";
 
 export default function Home() {
   const animation = { duration: 80000, easing: (t: number) => t };
@@ -106,12 +107,14 @@ export default function Home() {
             <TypographyV1>De diversas matérias</TypographyV1>
           </S.SectionCarousselText>
           <S.BoxCaroussel ref={sliderRef} className="keen-slider">
-            <S.ItemCaroussel className="keen-slider__slide">oi</S.ItemCaroussel>
-            <S.ItemCaroussel className="keen-slider__slide">oi</S.ItemCaroussel>
-            <S.ItemCaroussel className="keen-slider__slide">oi</S.ItemCaroussel>
-            <S.ItemCaroussel className="keen-slider__slide">oi</S.ItemCaroussel>
-            <S.ItemCaroussel className="keen-slider__slide">oi</S.ItemCaroussel>
-            <S.ItemCaroussel className="keen-slider__slide">oi</S.ItemCaroussel>
+            {subjects?.map((item) => (
+              <>
+                <S.ItemCaroussel className="keen-slider__slide">
+                  <Image src={item.icon} alt={`${item.name} icon`} width={50} />
+                  <TypographyV2>{item.name}</TypographyV2>
+                </S.ItemCaroussel>
+              </>
+            ))}
           </S.BoxCaroussel>
         </S.SectionCaroussel>
       </S.HomeContainer>

@@ -148,4 +148,11 @@ export const ItemCaroussel = styled("div", {
   background: "$gradientButtonBlue",
   boxShadow: "$gradientButtonBlue 0px 8px 29px 0px",
   borderRadius: 8,
+  display: "flex",
+  textAlign: "center",
+  justifyContent: "flex-start",
+  paddingLeft: "2rem",
+  alignContent: "center",
+  alignItems: "center",
+  gap: "2rem",
 });

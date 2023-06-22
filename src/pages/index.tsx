@@ -2,6 +2,9 @@ import Head from "next/head";
 import * as S from "../styles/pages/home";
 import camIco from "../../public/assets/camIco.svg";
 import sendIco from "../../public/assets/sendIco.svg";
+import { useKeenSlider } from "keen-slider/react";
+
+import "keen-slider/keen-slider.min.css";
 import Image from "next/image";
 import {
   TextMD,
@@ -12,6 +15,20 @@ import {
 import { PrimaryBtn } from "@/styles/buttons";
 
 export default function Home() {
+  const [sliderRef] = useKeenSlider({
+    slides: {
+      perView: 1,
+      spacing: 32,
+    },
+    breakpoints: {
+      "(min-width: 800px)": {
+        slides: {
+          perView: 3,
+          spacing: 16,
+        },
+      },
+    },
+  });
   return (
     <>
       <Head>
@@ -76,8 +93,18 @@ export default function Home() {
             <TypographyV2>Já são milhares de questões resolvidas</TypographyV2>
             <TypographyV1>De diversas matérias</TypographyV1>
           </S.SectionCarousselText>
-          <S.BoxCaroussel>
-            
+          <S.BoxCaroussel ref={sliderRef} className="keen-slider">
+            <div className="keen-slider__slide">oi</div>
+            <div className="keen-slider__slide">oi</div>
+            <div className="keen-slider__slide">oi</div>
+            <div className="keen-slider__slide">oi</div>
+            <div className="keen-slider__slide">oi</div>
+            <div className="keen-slider__slide">oi</div>
+            <div className="keen-slider__slide">oi</div>
+            <div className="keen-slider__slide">oi</div>
+            <div className="keen-slider__slide">oi</div>
+            <div className="keen-slider__slide">oi</div>
+            <div className="keen-slider__slide">oi</div>
           </S.BoxCaroussel>
         </S.SectionCaroussel>
       </S.HomeContainer>

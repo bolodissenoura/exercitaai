@@ -131,7 +131,7 @@ export const SectionCarousselText = styled("div", {
 });
 
 export const BoxCaroussel = styled("div", {
-  width: "90%",
+  width: "80% !important",
   margin: "0 auto",
   height: "165px",
   background: "$gradientButtonPurple",

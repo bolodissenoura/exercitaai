@@ -8,10 +8,6 @@ your questions
 it's a click away
 from distance! </h3>
 <h3 align="center">🚀 Next.js | Google Vision API | GPT </h3>
-<p align="center">
-
-> </p>
-
 </div>
 
 ---

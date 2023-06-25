@@ -1,6 +1,6 @@
 import { styled } from ".";
 
-export const TypographyV1 = styled("p", {
+export const TypographyV1 = styled("div", {
   fontSize: "$md",
   fontWeight: "500",
   fontFamily: "Inter",
@@ -8,14 +8,14 @@ export const TypographyV1 = styled("p", {
   textShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
 });
 
-export const TypographyV2 = styled("p", {
+export const TypographyV2 = styled("div", {
   fontSize: "$2xl",
   fontWeight: "700",
   fontFamily: "Inter",
   color: "$white",
 });
 
-export const TypographyV3 = styled("p", {
+export const TypographyV3 = styled("div", {
   fontSize: "$md",
   fontWeight: "500",
   fontFamily: "Montserrat",

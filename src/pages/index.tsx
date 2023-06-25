@@ -112,7 +112,7 @@ export default function Home() {
             <TypographyV2>Já são milhares de questões resolvidas</TypographyV2>
             <TypographyV1>De diversas matérias</TypographyV1>
           </S.NewSectionText>
-          <S.BoxCaroussel ref={sliderRef} className="keen-slider">
+          <S.BoxPurple ref={sliderRef} className="keen-slider">
             {subjects?.map((item) => (
               <>
                 <S.ItemCaroussel key={item.name} className="keen-slider__slide">
@@ -121,7 +121,7 @@ export default function Home() {
                 </S.ItemCaroussel>
               </>
             ))}
-          </S.BoxCaroussel>
+          </S.BoxPurple>
         </S.NewSection>
         <S.NewSection>
           <S.NewSectionText>
@@ -174,6 +174,26 @@ export default function Home() {
             <Image src={fuvest} alt="fuvest logo" />
           </S.InstitutionsGroup>
         </S.InstitutionsSection>
+        <S.NewSection>
+          <S.BoxPurple>
+            <div
+              style={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+                textAlign: "center",
+                flexDirection: "column",
+              }}>
+              <TypographyV2 style={{ color: "white" }}>
+                Inscreva-se em nossa lista de espera
+              </TypographyV2>
+              <TypographyV1 style={{ color: "white", fontWeight: "300" }}>
+                Nossa plataforma está sendo desenvolvida e estará
+                disponível em Julho
+              </TypographyV1>
+            </div>
+          </S.BoxPurple>
+        </S.NewSection>
       </S.HomeContainer>
     </>
   );

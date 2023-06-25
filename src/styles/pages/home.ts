@@ -131,7 +131,7 @@ export const NewSectionText = styled("div", {
   marginBottom: "2rem",
 });
 
-export const BoxCaroussel = styled("div", {
+export const BoxPurple = styled("div", {
   width: "80% !important",
   margin: "0 auto",
   height: "165px",

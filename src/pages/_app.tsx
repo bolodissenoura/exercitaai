@@ -5,8 +5,13 @@ import logoImg from "../../public/assets/logo.svg";
 import googleIco from "../../public/assets/googleIco.svg";
 import Image from "next/image";
 import * as S from "../styles/pages/app";
-import { ConditionalRender, TextMD, TextSM } from "@/styles/typography";
-import { PrimaryBtn } from "@/styles/buttons";
+import {
+  ConditionalRender,
+  TextMD,
+  TextSM,
+  TypographyV3,
+} from "@/styles/typography";
+import { PrimaryBtn, VersionTag } from "@/styles/buttons";
 import React from "react";
 
 globalStyles();
@@ -18,7 +23,8 @@ export default function App({ Component, pageProps }: AppProps) {
     const handleScroll = () => {
       // Calculate the scroll position and determine the background color based on it
       const scrollPosition = window.scrollY;
-      const newColor = scrollPosition > 100 ? "rgba(121, 7, 213, 0.3)" : "transparent";
+      const newColor =
+        scrollPosition > 100 ? "rgba(121, 7, 213, 0.3)" : "transparent";
 
       setBackgroundColor(newColor);
     };
@@ -40,12 +46,13 @@ export default function App({ Component, pageProps }: AppProps) {
           <TextMD>Exercita.ai</TextMD>
         </S.HeaderLogo>
         <S.HeaderButtons>
-          <PrimaryBtn>
+          {/* <PrimaryBtn>
             <Image src={googleIco} alt="logo img" />
             <ConditionalRender>
               <TextSM>Login</TextSM>
             </ConditionalRender>
-          </PrimaryBtn>
+          </PrimaryBtn> */}
+          <VersionTag>BETA v0.0.1</VersionTag>
         </S.HeaderButtons>
       </S.Header>
       <Component {...pageProps} />

@@ -25,3 +25,17 @@ export const PrimaryBtn = styled("button", {
     height: "3.25rem",
   },
 });
+
+export const VersionTag = styled("div", {
+  fontSize: "12px",
+  fontWeight: "700",
+  fontFamily: "Montserrat",
+  color: "$white",
+  background: "$gradientButtonPurple",
+  display: "flex",
+  justifyContent: "center",
+  alignContent: "center",
+  padding: 4,
+  borderRadius: 8,
+  width: 80,
+});

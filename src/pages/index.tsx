@@ -3,6 +3,7 @@ import * as S from "../styles/pages/home";
 import camIco from "../../public/assets/camIco.svg";
 import sendIco from "../../public/assets/sendIco.svg";
 import labelImg from "../../public/assets/labelImg.svg";
+import brazilFlag from "../../public/assets/brazilFlag.svg";
 import { useKeenSlider } from "keen-slider/react";
 
 import "keen-slider/keen-slider.min.css";
@@ -53,8 +54,7 @@ export default function Home() {
         <S.HomeContainerFlex>
           <S.TextGridContainer>
             <TypographyV1>
-              #1 IA desenvolvida para resolução de questões de provas pensado
-              100% em brasileiros 🇧🇷
+              #1 IA desenvolvida para resolução de questões de provas
             </TypographyV1>
             <TypographyV2 style={{ marginTop: "1.25rem" }}>
               A resposta para todas <br /> as suas perguntas <br /> está a um
@@ -105,7 +105,7 @@ export default function Home() {
           <S.BoxCaroussel ref={sliderRef} className="keen-slider">
             {subjects?.map((item) => (
               <>
-                <S.ItemCaroussel className="keen-slider__slide">
+                <S.ItemCaroussel key={item.name} className="keen-slider__slide">
                   <Image src={item.icon} alt={`${item.name} icon`} width={50} />
                   <TypographyV2>{item.name}</TypographyV2>
                 </S.ItemCaroussel>
@@ -125,7 +125,7 @@ export default function Home() {
                 }}>
                 Treinada com diversos conteúdos e materiais Brasiliero
               </TypographyV2>
-              <TypographyV2>🇧🇷</TypographyV2>
+              <Image src={brazilFlag} alt="brazil flag" />
             </div>
           </S.NewSectionText>
           <S.NewSectionExplanation>

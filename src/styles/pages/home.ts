@@ -6,6 +6,8 @@ export const HomeContainer = styled("main", {
 
 export const HomeContainerFlex = styled("main", {
   paddingTop: "150px",
+  maxWidth: "80%",
+  margin: "0 auto",
   "@bp2": {
     paddingLeft: 60,
     display: "flex",

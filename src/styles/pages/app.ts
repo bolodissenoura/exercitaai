@@ -19,7 +19,7 @@ export const Header = styled("main", {
 });
 
 export const HeaderLogo = styled("div", {
-  width: "230px",
+  // width: "230px",
   height: "100%",
   display: "flex",
   justifyContent: "center",

@@ -155,3 +155,24 @@ export const ItemCaroussel = styled("div", {
   alignItems: "center",
   gap: "2rem",
 });
+
+export const NewSectionExplanation = styled("div", {
+  width: "100%",
+  display: "flex",
+  flexDirection: "column-reverse",
+  gap: 16,
+  justifyContent: "center",
+  alignItems: "center",
+  alignContent: "center",
+  marginBottom: "2rem",
+
+  "@bp2": {
+    flexDirection: "row",
+    ".img": {
+      marginTop: "-50px",
+    },
+    ".text-box": {
+      width: 700,
+    },
+  },
+});

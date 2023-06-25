@@ -2,16 +2,12 @@ import Head from "next/head";
 import * as S from "../styles/pages/home";
 import camIco from "../../public/assets/camIco.svg";
 import sendIco from "../../public/assets/sendIco.svg";
+import labelImg from "../../public/assets/labelImg.svg";
 import { useKeenSlider } from "keen-slider/react";
 
 import "keen-slider/keen-slider.min.css";
 import Image from "next/image";
-import {
-  TextMD,
-  TypographyV1,
-  TypographyV2,
-  TypographyV3,
-} from "@/styles/typography";
+import { TypographyV1, TypographyV2, TypographyV3 } from "@/styles/typography";
 import { PrimaryBtn } from "@/styles/buttons";
 import { subjects } from "@/utils/fakeData";
 
@@ -132,8 +128,8 @@ export default function Home() {
               <TypographyV2>🇧🇷</TypographyV2>
             </div>
           </S.NewSectionText>
-          <S.NewSectionText>
-            <TypographyV1 style={{ color: "white" }}>
+          <S.NewSectionExplanation>
+            <TypographyV1 className="text-box" style={{ color: "white" }}>
               Nossa IA fornece respostas precisas e confiáveis para suas
               questões de provas. <br />
               <br />
@@ -142,14 +138,15 @@ export default function Home() {
                 concursos públicos e o ENEM.
               </TypographyV1>
               <br />
-              Nossa IA simplifica sua preparação, impulsionando seu desempenho e
+              Simplifique sua preparação, impulsionando seu desempenho e
               oferecendo uma vantagem competitiva.
               <br />
               <br />
               <br />
               <br />
             </TypographyV1>
-          </S.NewSectionText>
+            <Image className="img" src={labelImg} alt="Label img" />
+          </S.NewSectionExplanation>
         </S.NewSection>
       </S.HomeContainer>
     </>

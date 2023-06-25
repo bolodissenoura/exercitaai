@@ -178,3 +178,23 @@ export const NewSectionExplanation = styled("div", {
     },
   },
 });
+
+export const InstitutionsSection = styled("div", {
+  width: "100%",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignContent: "center",
+  "@bp2": {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+  },
+});
+
+export const InstitutionsGroup = styled("div", {
+  display: "flex",
+  justifyContent: "center",
+  alignContent: "center",
+  gap: 6,
+});

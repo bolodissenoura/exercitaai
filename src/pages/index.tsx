@@ -4,6 +4,16 @@ import camIco from "../../public/assets/camIco.svg";
 import sendIco from "../../public/assets/sendIco.svg";
 import labelImg from "../../public/assets/labelImg.svg";
 import brazilFlag from "../../public/assets/brazilFlag.svg";
+import fuvest from "../../public/assets/institutions/fuvest.svg";
+import espex from "../../public/assets/institutions/espex.svg";
+import ita from "../../public/assets/institutions/ita.svg";
+import mackenzie from "../../public/assets/institutions/mackenzie.svg";
+import oab from "../../public/assets/institutions/oab.svg";
+import pf from "../../public/assets/institutions/pf.svg";
+import puc from "../../public/assets/institutions/puc.svg";
+import unesp from "../../public/assets/institutions/unesp.svg";
+import unicamp from "../../public/assets/institutions/unicamp.svg";
+import enem from "../../public/assets/institutions/enem.svg";
 import { useKeenSlider } from "keen-slider/react";
 
 import "keen-slider/keen-slider.min.css";
@@ -148,6 +158,22 @@ export default function Home() {
             <Image className="img" src={labelImg} alt="Label img" />
           </S.NewSectionExplanation>
         </S.NewSection>
+        <S.InstitutionsSection>
+          <S.InstitutionsGroup>
+            <Image src={enem} alt="enem logo" />
+            <Image src={unicamp} alt="unicamp logo" />
+            <Image src={unesp} alt="unesp logo" />
+            <Image src={puc} alt="puc logo" />
+            <Image src={pf} alt="pf logo" />
+          </S.InstitutionsGroup>
+          <S.InstitutionsGroup>
+            <Image src={oab} alt="oab logo" />
+            <Image src={mackenzie} alt="mackenzie logo" />
+            <Image src={ita} alt="ita logo" />
+            <Image src={espex} alt="espex logo" />
+            <Image src={fuvest} alt="fuvest logo" />
+          </S.InstitutionsGroup>
+        </S.InstitutionsSection>
       </S.HomeContainer>
     </>
   );

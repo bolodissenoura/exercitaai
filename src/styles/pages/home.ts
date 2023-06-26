@@ -198,3 +198,41 @@ export const InstitutionsGroup = styled("div", {
   alignContent: "center",
   gap: 6,
 });
+
+export const InputBox = styled("form", {
+  display: "flex",
+  justifyContent: "center",
+  alignContent: "center",
+  gap: 16,
+  marginTop: 30,
+
+  input: {
+    border: "none",
+    width: "100%",
+    padding: 8,
+    backgroundColor: "White",
+    borderRadius: 16,
+    "input:focus": {
+      outline: "none !important",
+      borderColor: "red",
+      boxShadow: "0 0 10px red",
+    },
+  },
+});
+
+export const BoxCTA = styled("div", {
+  width: "90%",
+  margin: "0 auto",
+  padding: 16,
+  display: "flex",
+  alignItems: "center",
+  background: "$gradientButtonPurple",
+  boxShadow: "rgba(121, 7, 213, 1) 0px 8px 29px 0px",
+  borderRadius: 8,
+  justifyContent: "center",
+  textAlign: "center",
+  flexDirection: "column",
+  "@bp2": {
+    width: "800px",
+  },
+});

@@ -19,7 +19,7 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import Image from "next/image";
 import { TypographyV1, TypographyV2, TypographyV3 } from "@/styles/typography";
-import { PrimaryBtn } from "@/styles/buttons";
+import { CTABtn, PrimaryBtn } from "@/styles/buttons";
 import { subjects } from "@/utils/fakeData";
 
 export default function Home() {
@@ -175,25 +175,27 @@ export default function Home() {
           </S.InstitutionsGroup>
         </S.InstitutionsSection>
         <S.NewSection>
-          <S.BoxPurple>
-            <div
-              style={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-                textAlign: "center",
-                flexDirection: "column",
-              }}>
-              <TypographyV2 style={{ color: "white" }}>
-                Inscreva-se em nossa lista de espera
-              </TypographyV2>
-              <TypographyV1 style={{ color: "white", fontWeight: "300" }}>
-                Nossa plataforma está sendo desenvolvida e estará
-                disponível em Julho
-              </TypographyV1>
-            </div>
-          </S.BoxPurple>
+          <S.BoxCTA>
+            <TypographyV2 style={{ color: "white" }}>
+              Garanta um descontão de <br /> 20% em nosso lançamento
+            </TypographyV2>
+            <br />
+            <TypographyV1 style={{ color: "white", fontWeight: "300" }}>
+              Nossa plataforma está sendo desenvolvida <br /> e estará
+              disponível em breve
+            </TypographyV1>
+            <S.InputBox onSubmit={() => console.log("sexo")}>
+              <input placeholder="Seu melhor e-mail" type="email" />
+              <CTABtn type="submit">Garantir desconto</CTABtn>
+            </S.InputBox>
+            <br />
+          </S.BoxCTA>
         </S.NewSection>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </S.HomeContainer>
     </>
   );

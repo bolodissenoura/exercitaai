@@ -9,7 +9,6 @@ export const FooterContainer = styled("footer", {
 });
 
 export const HeaderLogo = styled("div", {
-  width: "230px",
   display: "flex",
   justifyContent: "center",
   gap: 12,

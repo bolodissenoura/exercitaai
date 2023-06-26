@@ -2,6 +2,7 @@ import { styled } from "..";
 
 export const HomeContainer = styled("main", {
   background: "$gradientBgPurple",
+  marginBottom: "-4px",
 });
 
 export const HomeContainerFlex = styled("main", {

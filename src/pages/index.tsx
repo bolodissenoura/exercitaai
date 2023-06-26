@@ -1,5 +1,12 @@
 import Head from "next/head";
 import * as S from "../styles/pages/home";
+import * as C from "../components";
+// General Components
+import { TypographyV1, TypographyV2, TypographyV3 } from "@/styles/typography";
+import { CTABtn, PrimaryBtn } from "@/styles/buttons";
+import { subjects } from "@/utils/fakeData";
+// SVGS imgs
+import Image from "next/image";
 import camIco from "../../public/assets/camIco.svg";
 import sendIco from "../../public/assets/sendIco.svg";
 import labelImg from "../../public/assets/labelImg.svg";
@@ -14,13 +21,9 @@ import puc from "../../public/assets/institutions/puc.svg";
 import unesp from "../../public/assets/institutions/unesp.svg";
 import unicamp from "../../public/assets/institutions/unicamp.svg";
 import enem from "../../public/assets/institutions/enem.svg";
+// Keen Slider
 import { useKeenSlider } from "keen-slider/react";
-
 import "keen-slider/keen-slider.min.css";
-import Image from "next/image";
-import { TypographyV1, TypographyV2, TypographyV3 } from "@/styles/typography";
-import { CTABtn, PrimaryBtn } from "@/styles/buttons";
-import { subjects } from "@/utils/fakeData";
 
 export default function Home() {
   const animation = { duration: 80000, easing: (t: number) => t };
@@ -192,11 +195,8 @@ export default function Home() {
           </S.BoxCTA>
         </S.NewSection>
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
       </S.HomeContainer>
+      <C.Footer />
     </>
   );
 }

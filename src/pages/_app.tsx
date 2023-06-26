@@ -2,16 +2,10 @@ import type { AppProps } from "next/app";
 import { globalStyles } from "../styles/global";
 
 import logoImg from "../../public/assets/logo.svg";
-import googleIco from "../../public/assets/googleIco.svg";
 import Image from "next/image";
 import * as S from "../styles/pages/app";
-import {
-  ConditionalRender,
-  TextMD,
-  TextSM,
-  TypographyV3,
-} from "@/styles/typography";
-import { PrimaryBtn, VersionTag } from "@/styles/buttons";
+import { TextMD } from "@/styles/typography";
+import { VersionTag } from "@/styles/buttons";
 import React from "react";
 
 globalStyles();

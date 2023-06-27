@@ -8,6 +8,7 @@ import * as S from "../styles/pages/app";
 import { TextMD } from "@/styles/typography";
 import { VersionTag } from "@/styles/buttons";
 import React from "react";
+import Link from "next/link";
 
 globalStyles();
 
@@ -36,10 +37,12 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <S.Container>
       <S.Header style={{ background: backgroundColor }}>
-        <S.HeaderLogo>
-          <Image src={logoImg} alt="logo img" />
-          <TextMD>Exercita.ai</TextMD>
-        </S.HeaderLogo>
+        <Link href={"/"} style={{ textDecoration: "none" }}>
+          <S.HeaderLogo>
+            <Image src={logoImg} alt="logo img" />
+            <TextMD>Exercita.ai</TextMD>
+          </S.HeaderLogo>
+        </Link>
         <S.HeaderButtons>
           {/* <PrimaryBtn>
             <Image src={googleIco} alt="logo img" />

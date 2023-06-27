@@ -28,7 +28,10 @@ export function Footer() {
         <S.CreatedBySection>
           <p>Criado com </p>
           <Image src={heartIco} alt="logo img" />
-          <p> por @daniellimae e @the_xaavier</p>
+          <p> por @daniellimae </p>
+        </S.CreatedBySection>
+        <S.CreatedBySection>
+          <p> e @the_xaavier </p>
         </S.CreatedBySection>
       </S.FooterContainer>
     </>

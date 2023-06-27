@@ -12,7 +12,6 @@ import sendIco from "../../public/assets/sendIco.svg";
 import labelImg from "../../public/assets/labelImg.svg";
 import brazilFlag from "../../public/assets/brazilFlag.svg";
 import fuvest from "../../public/assets/institutions/fuvest.svg";
-import espex from "../../public/assets/institutions/espex.svg";
 import ita from "../../public/assets/institutions/ita.svg";
 import mackenzie from "../../public/assets/institutions/mackenzie.svg";
 import oab from "../../public/assets/institutions/oab.svg";
@@ -49,7 +48,7 @@ export default function Home() {
     breakpoints: {
       "(min-width: 800px)": {
         slides: {
-          perView: 3,
+          perView: 4,
           spacing: 16,
         },
       },
@@ -95,9 +94,7 @@ export default function Home() {
               A resposta para todas <br /> as suas perguntas <br /> está a um
               clique <br /> de distância!
             </TypographyV2>
-            <PrimaryBtn style={{ background: "#FF5785" }}>
-              Testar agora
-            </PrimaryBtn>
+            <PrimaryBtn>Testar GRÁTIS</PrimaryBtn>
           </S.TextGridContainer>
           <S.BoxGridContainer>
             <S.Box>
@@ -139,7 +136,10 @@ export default function Home() {
             <TypographyV2>Já são milhares de questões resolvidas</TypographyV2>
             <TypographyV1>De diversas matérias</TypographyV1>
           </S.NewSectionText>
-          <S.BoxPurple ref={sliderRef} className="keen-slider">
+          <S.BoxPurple
+            style={{ height: "102px" }}
+            ref={sliderRef}
+            className="keen-slider">
             {subjects?.map((item) => (
               <>
                 <S.ItemCaroussel key={item.name} className="keen-slider__slide">

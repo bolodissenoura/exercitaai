@@ -11,9 +11,11 @@ import saude from "../../public/assets/subjects/saude.svg";
 import informatica from "../../public/assets/subjects/informatica.svg";
 import psicologia from "../../public/assets/subjects/psicologia.svg";
 import linguas from "../../public/assets/subjects/linguas.svg";
+import biologia from "../../public/assets/subjects/biologia.svg";
 
 export const subjects = [
   { name: "Concursos", icon: concursos },
+  { name: "Biologia", icon: biologia },
   { name: "Direito", icon: direito },
   { name: "Geografia", icon: geografia },
   { name: "Matemática", icon: matematica },
@@ -22,7 +24,6 @@ export const subjects = [
   { name: "Química", icon: quimica },
   { name: "Física", icon: fisica },
   { name: "Português", icon: portugues },
-  { name: "Saúde", icon: saude },
   { name: "Informática", icon: informatica },
   { name: "Psicologia", icon: psicologia },
   { name: "Línguas ", icon: linguas },

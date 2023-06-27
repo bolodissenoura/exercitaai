@@ -141,7 +141,7 @@ export const BoxPurple = styled("div", {
   alignItems: "center",
   background: "$gradientButtonPurple",
   boxShadow: "rgba(121, 7, 213, 1) 0px 8px 29px 0px",
-  borderRadius: 8,
+  borderRadius: "1.875rem",
 });
 
 export const ItemCaroussel = styled("div", {
@@ -149,7 +149,7 @@ export const ItemCaroussel = styled("div", {
   minHeight: "10px !important",
   background: "$gradientButtonBlue",
   boxShadow: "$gradientButtonBlue 0px 8px 29px 0px",
-  borderRadius: 8,
+  borderRadius: "0.75rem",
   display: "flex",
   textAlign: "center",
   justifyContent: "flex-start",

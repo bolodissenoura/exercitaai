@@ -2,15 +2,17 @@ import { styled } from ".";
 
 export const PrimaryBtn = styled("button", {
   backgroundColor: "$purple700",
-  borderRadius: "1.5rem",
+  borderRadius: "0.5rem",
   display: "flex",
-  padding: 10,
+  padding: "20px 50px",
   justifyContent: "center",
   gap: 12,
   alignItems: "center",
   border: "none",
   cursor: "pointer",
   color: "$white",
+  fontSize: "$lg",
+  background: "$gradientButtonPink",
   boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
   margin: "1rem auto 0 auto",
   "&:hover": {
@@ -27,7 +29,7 @@ export const PrimaryBtn = styled("button", {
 });
 
 export const CTABtn = styled("button", {
-  backgroundColor: "#FF5785",
+  background: "$gradientButtonPink",
   borderRadius: "1.25rem",
   display: "flex",
   padding: 10,

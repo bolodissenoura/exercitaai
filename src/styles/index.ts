@@ -33,6 +33,8 @@ export const {
         "linear-gradient(135.17deg, #7907D5 -54.16%, #A16AFA 141.67%)",
       gradientButtonBlue:
         "linear-gradient(135.17deg, #263150 -54.16%, #213971 141.67%)",
+      gradientButtonPink:
+        "linear-gradient(135.17deg, #FF2F68 -54.16%, #FF7CA0 141.67%)",
     },
 
     fontSizes: {

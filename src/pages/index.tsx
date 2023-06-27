@@ -140,13 +140,11 @@ export default function Home() {
             style={{ height: "102px" }}
             ref={sliderRef}
             className="keen-slider">
-            {subjects?.map((item) => (
-              <>
-                <S.ItemCaroussel key={item.name} className="keen-slider__slide">
-                  <Image src={item.icon} alt={`${item.name} icon`} width={50} />
-                  <TypographyV2>{item.name}</TypographyV2>
-                </S.ItemCaroussel>
-              </>
+            {subjects?.map((item, index: number) => (
+              <S.ItemCaroussel key={index} className="keen-slider__slide">
+                <Image src={item.icon} alt={`${item.name} icon`} width={50} />
+                <TypographyV2>{item.name}</TypographyV2>
+              </S.ItemCaroussel>
             ))}
           </S.BoxPurple>
         </S.NewSection>

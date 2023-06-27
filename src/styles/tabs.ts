@@ -3,6 +3,7 @@ import { styled } from ".";
 export const TabWrapper = styled("div", {
   background: "#C7C7C7",
   borderRadius: 16,
+  boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
 });
 
 export const TabItem = styled("button", {

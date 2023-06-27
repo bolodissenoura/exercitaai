@@ -32,7 +32,7 @@ export const CTABtn = styled("button", {
   background: "$gradientButtonPink",
   borderRadius: "1.25rem",
   display: "flex",
-  padding: 10,
+  padding: "8px 30px",
   justifyContent: "center",
   gap: 12,
   alignItems: "center",
@@ -41,6 +41,8 @@ export const CTABtn = styled("button", {
   color: "$white",
   boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
   fontWeight: 500,
+  fontSize: "$sm",
+
   "&:hover": {
     opacity: 0.8,
   },

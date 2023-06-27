@@ -198,7 +198,7 @@ export const InstitutionsGroup = styled("div", {
   display: "flex",
   justifyContent: "center",
   alignContent: "center",
-  gap: 6,
+  gap: 30,
 });
 
 export const InputBox = styled("form", {
@@ -207,13 +207,18 @@ export const InputBox = styled("form", {
   alignContent: "center",
   gap: 16,
   marginTop: 30,
+  background: "white",
+  borderRadius: 30,
 
   input: {
     border: "none",
     width: "100%",
     padding: 8,
+    paddingLeft: 30,
+    borderRadius: 30,
     backgroundColor: "White",
-    borderRadius: 16,
+    color: "#9d9d9d",
+    fontWeight: 300,
     "input:focus": {
       outline: "none !important",
       borderColor: "red",
@@ -230,7 +235,7 @@ export const BoxCTA = styled("div", {
   alignItems: "center",
   background: "$gradientButtonPurple",
   boxShadow: "rgba(121, 7, 213, 1) 0px 8px 29px 0px",
-  borderRadius: 8,
+  borderRadius: 30,
   justifyContent: "center",
   textAlign: "center",
   flexDirection: "column",

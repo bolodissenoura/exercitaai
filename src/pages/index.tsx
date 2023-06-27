@@ -21,6 +21,9 @@ import puc from "../../public/assets/institutions/puc.svg";
 import unesp from "../../public/assets/institutions/unesp.svg";
 import unicamp from "../../public/assets/institutions/unicamp.svg";
 import enem from "../../public/assets/institutions/enem.svg";
+import explicativa from "../../public/assets/explicativa.png";
+import direta from "../../public/assets/direta.png";
+
 // Keen Slider
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
@@ -52,6 +55,25 @@ export default function Home() {
       },
     },
   });
+
+  const tabs = [
+    {
+      title: "Passo a passo",
+      content: (
+        <>
+          <Image src={explicativa} alt="" />
+        </>
+      ),
+    },
+    {
+      title: "Direto ao ponto",
+      content: (
+        <>
+          <Image src={direta} alt="" />
+        </>
+      ),
+    },
+  ];
   return (
     <>
       <Head>
@@ -73,7 +95,9 @@ export default function Home() {
               A resposta para todas <br /> as suas perguntas <br /> está a um
               clique <br /> de distância!
             </TypographyV2>
-            <PrimaryBtn>Testar agora</PrimaryBtn>
+            <PrimaryBtn style={{ background: "#FF5785" }}>
+              Testar agora
+            </PrimaryBtn>
           </S.TextGridContainer>
           <S.BoxGridContainer>
             <S.Box>
@@ -196,6 +220,15 @@ export default function Home() {
           </S.BoxCTA>
         </S.NewSection>
         <br />
+        <S.NewSection>
+          <S.BoxCTA style={{ width: "100%", background: "white" }}>
+            <TypographyV2 style={{ color: "#7907D5" }}>
+              Desfrute de dois modos de Resposta:
+            </TypographyV2>
+            <br />
+            <C.Tabs tabs={tabs} />
+          </S.BoxCTA>
+        </S.NewSection>
       </S.HomeContainer>
       <C.Footer />
     </>

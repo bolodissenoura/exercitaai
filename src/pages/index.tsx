@@ -160,17 +160,19 @@ export default function Home() {
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}>
-                Treinada com diversos conteúdos e materiais Brasiliero
+                Treinada com diversos conteúdos e materiais brasiliero
               </TypographyV2>
               <Image src={brazilFlag} alt="brazil flag" />
             </div>
           </S.NewSectionText>
           <S.NewSectionExplanation>
-            <TypographyV1 className="text-box" style={{ color: "white" }}>
+            <TypographyV1
+              className="text-box"
+              style={{ color: "white", fontWeight: "300" }}>
               Nossa IA fornece respostas precisas e confiáveis para suas
               questões de provas. <br />
               <br />
-              <TypographyV1>
+              <TypographyV1 style={{ fontWeight: "700" }}>
                 Treinada com diversos dados de provas, incluindo vestibulares,
                 concursos públicos e o ENEM.
               </TypographyV1>
@@ -204,7 +206,7 @@ export default function Home() {
         </S.InstitutionsSection>
         <S.NewSection>
           <S.BoxCTA>
-            <TypographyV2 style={{ color: "white" }}>
+            <TypographyV2 style={{ color: "white", marginTop: 30 }}>
               Garanta um descontão de <br /> 20% em nosso lançamento
             </TypographyV2>
             <br />

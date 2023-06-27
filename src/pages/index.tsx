@@ -36,6 +36,9 @@ import React from "react";
 export default function Home() {
   const contentRef = React.useRef<HTMLDivElement | null>(null);
 
+  const ACTIVE_CAMPAIGN_FORM_ACTION_URL =
+    "https://aiexercita.activehosted.com/proc.php";
+
   const animation = { duration: 80000, easing: (t: number) => t };
   const [sliderRef] = useKeenSlider({
     loop: true,
@@ -235,11 +238,30 @@ export default function Home() {
               disponível em breve
             </TypographyV1>
             <S.InputBox
-              style={{ zIndex: 99 }}
-              onSubmit={() => console.log("sexo")}>
+              action={ACTIVE_CAMPAIGN_FORM_ACTION_URL}
+              method="POST"
+              id="_form_newsletter_"
+              className="_form _form_newsletter _inline-form  _dark"
+              noValidate
+              style={{ zIndex: 99 }}>
+              <input type="hidden" name="u" value="1" />
+              <input type="hidden" name="f" value="1" />
+              <input type="hidden" name="s" />
+              <input type="hidden" name="c" value="0" />
+              <input type="hidden" name="m" value="0" />
+              <input type="hidden" name="act" value="sub" />
+              <input type="hidden" name="v" value="2" />
+              <input
+                type="hidden"
+                name="or"
+                value="dffba1e88be81718ded8271ff69e4891"
+              />
               <input
                 style={{ zIndex: 99 }}
                 placeholder="Seu melhor e-mail"
+                id="email"
+                required
+                name="email"
                 type="email"
               />
               <CTABtn style={{ zIndex: 99 }} type="submit">

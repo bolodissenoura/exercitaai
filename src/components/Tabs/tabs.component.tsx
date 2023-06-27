@@ -30,6 +30,8 @@ export function Tabs({ tabs }: TabComponentProps) {
             css={{
               background:
                 activeTab === index ? "$gradientButtonPurple" : "transparent",
+              color:
+                activeTab === index ? "white" : "black",
             }}>
             {tab.title}
           </S.TabItem>

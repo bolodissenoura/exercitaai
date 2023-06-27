@@ -166,14 +166,15 @@ export default function Home() {
             <Image src={enem} alt="enem logo" />
             <Image src={unicamp} alt="unicamp logo" />
             <Image src={unesp} alt="unesp logo" />
-            <Image src={puc} alt="puc logo" />
-            <Image src={pf} alt="pf logo" />
           </S.InstitutionsGroup>
           <S.InstitutionsGroup>
             <Image src={oab} alt="oab logo" />
             <Image src={mackenzie} alt="mackenzie logo" />
             <Image src={ita} alt="ita logo" />
-            <Image src={espex} alt="espex logo" />
+          </S.InstitutionsGroup>
+          <S.InstitutionsGroup>
+            <Image src={puc} alt="puc logo" />
+            <Image src={pf} alt="pf logo" />
             <Image src={fuvest} alt="fuvest logo" />
           </S.InstitutionsGroup>
         </S.InstitutionsSection>

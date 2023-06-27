@@ -164,6 +164,7 @@ export const NewSectionExplanation = styled("div", {
   display: "flex",
   flexDirection: "column-reverse",
   gap: 16,
+  padding: 20,
   justifyContent: "center",
   alignItems: "center",
   alignContent: "center",

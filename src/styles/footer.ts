@@ -2,6 +2,7 @@ import { styled } from ".";
 
 export const FooterContainer = styled("footer", {
   width: "100%",
+  padding: "40px 10px",
   background: "$gray500",
   "@bp2": {
     padding: 60,

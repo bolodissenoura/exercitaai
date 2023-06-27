@@ -1,0 +1,123 @@
+.fBall {
+  top: 50%;
+  left: 50%;
+  background-color: #7907d5;
+  animation: animation-3 8s infinite;
+}
+
+.sBall {
+  top: 80%;
+  left: 70%;
+  background-color: #7907d5;
+  animation: animation-3 8s infinite;
+}
+
+.tBall {
+  top: 10%;
+  left: 30%;
+  background-color: #7907d5;
+  animation: animation-3 8s infinite;
+}
+
+.features-gradients-right {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  background-color: rgba(1, 1, 1, 0.25);
+  filter: blur(12em);
+  z-index: 2;
+}
+
+.features-gradients-left {
+  width: 50%;
+  height: 50%;
+  margin-left: 50px;
+  position: absolute;
+  background-color: rgba(1, 1, 1, 0.25);
+  filter: blur(12em);
+  z-index: 2;
+}
+
+@media only screen and (min-width: 768px) {
+  .features-gradients-left {
+    margin-left: 50%;
+  }
+}
+
+.features-gradient {
+  width: 200px;
+  height: 400px;
+  position: absolute;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+@keyframes animation-1 {
+  0% {
+    transform: translateY(-50%) translateX(-50%) translateX(-15%)
+      translateY(10%);
+  }
+  20% {
+    transform: translateY(-50%) translateX(-50%) translateX(-20%)
+      translateY(-30%);
+  }
+  40% {
+    transform: translateY(-50%) translateX(-50%) translateX(-25%)
+      translateY(-15%);
+  }
+  60% {
+    transform: translateY(-50%) translateX(-50%) translateX(30%) translateY(20%);
+  }
+  80% {
+    transform: translateY(-50%) translateX(-50%) translateX(5%) translateY(35%);
+  }
+  to {
+    transform: translateY(-50%) translateX(-50%) translateX(-15%)
+      translateY(10%);
+  }
+}
+
+@keyframes animation-2 {
+  0% {
+    transform: translateY(-50%) translateX(-50%) rotate(-20deg) translateX(20%);
+  }
+  25% {
+    transform: translateY(-50%) translateX(-50%) skew(-15deg, 15deg)
+      rotate(-80deg) translateX(30%);
+  }
+  50% {
+    transform: translateY(-50%) translateX(-50%) rotate(180deg) translateX(25%);
+  }
+  75% {
+    transform: translateY(-50%) translateX(-50%) skew(-15deg, 15deg)
+      rotate(240deg) translateX(15%);
+  }
+  to {
+    transform: translateY(-50%) translateX(-50%) rotate(340deg) translateX(20%);
+  }
+}
+
+@keyframes animation-3 {
+  0% {
+    transform: translateY(-50%) translateX(-50%) translateX(-15%)
+      translateY(10%);
+  }
+  20% {
+    transform: translateY(-50%) translateX(-50%) translateX(20%)
+      translateY(-30%);
+  }
+  40% {
+    transform: translateY(-50%) translateX(-50%) translateX(-25%)
+      translateY(-15%);
+  }
+  60% {
+    transform: translateY(-50%) translateX(-50%) translateX(30%) translateY(20%);
+  }
+  80% {
+    transform: translateY(-50%) translateX(-50%) translateX(5%) translateY(35%);
+  }
+  to {
+    transform: translateY(-50%) translateX(-50%) translateX(-15%)
+      translateY(10%);
+  }
+}

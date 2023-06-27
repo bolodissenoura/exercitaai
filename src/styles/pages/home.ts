@@ -1,7 +1,7 @@
 import { styled } from "..";
 
 export const HomeContainer = styled("main", {
-  background: "$gradientBgPurple",
+  background: "$gray900",
   marginBottom: "-4px",
 });
 
@@ -160,7 +160,7 @@ export const ItemCaroussel = styled("div", {
 });
 
 export const NewSectionExplanation = styled("div", {
-  width: "100%",
+  width: "90%",
   display: "flex",
   flexDirection: "column-reverse",
   gap: 16,
@@ -241,5 +241,22 @@ export const BoxCTA = styled("div", {
   flexDirection: "column",
   "@bp2": {
     width: "800px",
+  },
+});
+
+export const BoxCTAWhite = styled("div", {
+  width: "90%",
+  margin: "0 auto",
+  padding: 16,
+  display: "flex",
+  alignItems: "center",
+  background: "white",
+  boxShadow: "rgba(121, 7, 213, 1) 0px 8px 29px 0px",
+  borderRadius: 30,
+  justifyContent: "center",
+  textAlign: "center",
+  flexDirection: "column",
+  "@bp2": {
+    width: "100%",
   },
 });

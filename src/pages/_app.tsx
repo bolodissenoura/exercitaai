@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import { globalStyles } from "../styles/global";
 
+import "../styles/keyframesGlow.css";
 import logoImg from "../../public/assets/logo.svg";
 import Image from "next/image";
 import * as S from "../styles/pages/app";

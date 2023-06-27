@@ -26,8 +26,11 @@ import direta from "../../public/assets/direta.png";
 // Keen Slider
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+import React from "react";
 
 export default function Home() {
+  const contentRef = React.useRef<HTMLDivElement | null>(null);
+
   const animation = { duration: 80000, easing: (t: number) => t };
   const [sliderRef] = useKeenSlider({
     loop: true,
@@ -60,7 +63,7 @@ export default function Home() {
       title: "Passo a passo",
       content: (
         <>
-          <Image src={explicativa} alt="" />
+          <Image src={explicativa} width={300} alt="" />
         </>
       ),
     },
@@ -68,11 +71,16 @@ export default function Home() {
       title: "Direto ao ponto",
       content: (
         <>
-          <Image src={direta} alt="" />
+          <Image src={direta} width={300} alt="" />
         </>
       ),
     },
   ];
+  const handleClickCTA = () => {
+    if (contentRef.current) {
+      contentRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <Head>
@@ -85,16 +93,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <S.HomeContainer>
+        <C.KeyframesGlow position="right" />
         <S.HomeContainerFlex>
           <S.TextGridContainer>
             <TypographyV1>
               #1 IA desenvolvida para resolução de questões de provas
             </TypographyV1>
-            <TypographyV2 style={{ marginTop: "1.25rem" }}>
+            <TypographyV2 style={{ marginTop: "1.25rem", zIndex: 99 }}>
               A resposta para todas <br /> as suas perguntas <br /> está a um
               clique <br /> de distância!
             </TypographyV2>
-            <PrimaryBtn>Testar GRÁTIS</PrimaryBtn>
+            <PrimaryBtn onClick={handleClickCTA} style={{ zIndex: 99 }}>
+              Testar GRÁTIS
+            </PrimaryBtn>
           </S.TextGridContainer>
           <S.BoxGridContainer>
             <S.Box>
@@ -106,6 +117,7 @@ export default function Home() {
                     flexDirection: "column",
                     justifyContent: "space-between",
                     height: "80%",
+                    zIndex: 99,
                   }}>
                   <TypographyV3
                     style={{
@@ -196,15 +208,16 @@ export default function Home() {
             <Image src={mackenzie} alt="mackenzie logo" />
             <Image src={ita} alt="ita logo" />
           </S.InstitutionsGroup>
-          <S.InstitutionsGroup>
+          <S.InstitutionsGroup ref={contentRef}>
             <Image src={puc} alt="puc logo" />
             <Image src={pf} alt="pf logo" />
             <Image src={fuvest} alt="fuvest logo" />
           </S.InstitutionsGroup>
         </S.InstitutionsSection>
+        <C.KeyframesGlow position="left" />
         <S.NewSection>
           <S.BoxCTA>
-            <TypographyV2 style={{ color: "white", marginTop: 30 }}>
+            <TypographyV2 style={{ color: "white", marginTop: 30, zIndex: 99 }}>
               Garanta um descontão de <br /> 20% em nosso lançamento
             </TypographyV2>
             <br />
@@ -212,22 +225,30 @@ export default function Home() {
               Nossa plataforma está sendo desenvolvida <br /> e estará
               disponível em breve
             </TypographyV1>
-            <S.InputBox onSubmit={() => console.log("sexo")}>
-              <input placeholder="Seu melhor e-mail" type="email" />
-              <CTABtn type="submit">Garantir desconto</CTABtn>
+            <S.InputBox
+              style={{ zIndex: 99 }}
+              onSubmit={() => console.log("sexo")}>
+              <input
+                style={{ zIndex: 99 }}
+                placeholder="Seu melhor e-mail"
+                type="email"
+              />
+              <CTABtn style={{ zIndex: 99 }} type="submit">
+                Garantir desconto
+              </CTABtn>
             </S.InputBox>
             <br />
           </S.BoxCTA>
         </S.NewSection>
         <br />
         <S.NewSection>
-          <S.BoxCTA style={{ width: "100%", background: "white" }}>
+          <S.BoxCTAWhite>
             <TypographyV2 style={{ color: "#7907D5" }}>
               Desfrute de dois modos de Resposta:
             </TypographyV2>
             <br />
             <C.Tabs tabs={tabs} />
-          </S.BoxCTA>
+          </S.BoxCTAWhite>
         </S.NewSection>
       </S.HomeContainer>
       <C.Footer />

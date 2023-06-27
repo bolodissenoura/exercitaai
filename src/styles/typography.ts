@@ -1,6 +1,7 @@
 import { styled } from ".";
 
 export const TypographyV1 = styled("div", {
+  zIndex: 9,
   fontSize: "$md",
   fontWeight: "500",
   fontFamily: "Inter",

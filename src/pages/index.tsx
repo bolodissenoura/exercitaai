@@ -2,7 +2,12 @@ import Head from "next/head";
 import * as S from "../styles/pages/home";
 import * as C from "../components";
 // General Components
-import { TypographyV1, TypographyV2, TypographyV3 } from "@/styles/typography";
+import {
+  TypographyV1,
+  TypographyV2,
+  TypographyV3,
+  TypographyV4,
+} from "@/styles/typography";
 import { CTABtn, PrimaryBtn } from "@/styles/buttons";
 import { subjects } from "@/utils/fakeData";
 // SVGS imgs
@@ -99,10 +104,14 @@ export default function Home() {
             <TypographyV1>
               #1 IA desenvolvida para resolução de questões de provas
             </TypographyV1>
-            <TypographyV2 style={{ marginTop: "1.25rem", zIndex: 99 }}>
+            <TypographyV4 style={{ marginTop: "1.25rem", zIndex: 99 }}>
               A resposta para todas <br /> as suas perguntas <br /> está a um
               clique <br /> de distância!
-            </TypographyV2>
+            </TypographyV4>
+            <br />
+            <TypographyV1 style={{ color: "white", fontWeight: 300 }}>
+              Não perca mais tempo procurando respostas
+            </TypographyV1>
             <PrimaryBtn onClick={handleClickCTA} style={{ zIndex: 99 }}>
               Testar GRÁTIS
             </PrimaryBtn>

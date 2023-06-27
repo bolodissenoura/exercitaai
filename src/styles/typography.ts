@@ -26,6 +26,16 @@ export const TypographyV3 = styled("div", {
   textAlign: "left",
 });
 
+export const TypographyV4 = styled("div", {
+  fontSize: "$2xl",
+  fontWeight: "700",
+  fontFamily: "Inter",
+  color: "$white",
+  "@bp2": {
+    fontSize: "3rem",
+  },
+});
+
 export const TextMD = styled("h2", {
   fontSize: "$xl",
   fontWeight: "700",

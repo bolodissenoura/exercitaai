@@ -5,6 +5,7 @@ import brazilFlag from "../../../public/assets/brazilFlag.svg";
 import Image from "next/image";
 import { TextMD } from "@/styles/typography";
 import { VersionTag } from "@/styles/buttons";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -28,10 +29,28 @@ export function Footer() {
         <S.CreatedBySection>
           <p>Criado com </p>
           <Image src={heartIco} alt="logo img" />
-          <p> por @daniellimae </p>
+          <p>
+            {" "}
+            por{" "}
+            <Link
+              style={{ color: "white" }}
+              href="https://twitter.com/daniellimae">
+              {" "}
+              @daniellimae{" "}
+            </Link>{" "}
+          </p>
         </S.CreatedBySection>
         <S.CreatedBySection>
-          <p> e @the_xaavier </p>
+          <p>
+            {" "}
+            e{" "}
+            <Link
+              style={{ color: "white" }}
+              href="https://twitter.com/the_xaavier">
+              {" "}
+              @the_xaavier{" "}
+            </Link>{" "}
+          </p>
         </S.CreatedBySection>
       </S.FooterContainer>
     </>

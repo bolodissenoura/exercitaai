@@ -36,83 +36,26 @@ export const BoxGridContainer = styled("div", {
   alignContent: "center",
 });
 
-export const Box = styled("div", {
-  width: "500px",
-  height: "300px",
-  marginTop: "1rem",
-  borderRadius: "1rem",
-  background: "rgba(255, 255, 255, 0.2)",
-  boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
-  backdropFilter: "blur(5px)",
-  "-webkit-backdrop-filter": "blur(5px)",
-  border: "1px solid rgba(255, 255, 255, 0.3)",
-  padding: "0.5rem",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  margin: "60px 10px",
-});
-
-export const WhiteBox = styled("div", {
+export const MockupContainer = styled("div", {
   width: "100%",
-  height: "100%",
-  borderRadius: ".5rem",
-  background: "rgba(246, 246, 246, 1)",
-});
-
-export const ButtonCamera = styled("button", {
-  width: "50px",
-  height: "100%",
-  fontSize: "$lg",
+  borderRadius: 32,
   display: "flex",
+  textAlign: "center",
   justifyContent: "center",
-  alignItems: "center",
-  padding: 8,
-  borderTopLeftRadius: ".5rem",
-  borderBottomLeftRadius: ".5rem",
-  background: "rgba(222, 222, 222, 1)",
-  marginRight: "-12px",
-  border: "none",
+  alignContent: "center",
+  perspective: "1000px",
+  marginTop: 100,
 
-  "&:hover": {
-    boxShadow: "none",
-    opacity: 0.9,
-    cursor: "pointer",
+  "@bp2": {
+    marginTop: 0,
   },
-});
 
-export const InputQuest = styled("input", {
-  width: "100%",
-  height: "52px",
-  fontSize: "$lg",
-  borderRadius: ".5rem",
-  padding: 5,
-  border: "none",
-  borderTopLeftRadius: ".8rem",
-  borderBottomLeftRadius: ".8rem",
-  boxShadow: " rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
-  background: "rgba(255, 255, 255, 1)",
-});
+  ".iphone-mockup": {
+    transition: "transform 0.3s ease",
+  },
 
-export const ButtonSend = styled("button", {
-  width: "50px",
-  height: "50px",
-  fontSize: "$lg",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  padding: 8,
-  borderRadius: ".5rem",
-  background: "$gradientButtonPurple",
-  border: "none",
-  marginLeft: "-55px",
-  marginTop: "6px",
-  boxShadow: " rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
-
-  "&:hover": {
-    boxShadow: "none",
-    opacity: 0.9,
-    cursor: "pointer",
+  ".iphone-mockup.hovered": {
+    transform: "rotateY(-10deg)",
   },
 });
 
@@ -233,7 +176,7 @@ export const BoxCTA = styled("div", {
   padding: 16,
   display: "flex",
   alignItems: "center",
-  background: "$gradientButtonPurple",
+  background: "$gray900",
   boxShadow: "rgba(121, 7, 213, 1) 0px 8px 29px 0px",
   borderRadius: 30,
   justifyContent: "center",
@@ -259,4 +202,16 @@ export const BoxCTAWhite = styled("div", {
   "@bp2": {
     width: "100%",
   },
+});
+
+export const BoxTransparent = styled("div", {
+  width: "80%",
+  paddingTop: "20px",
+  margin: "40px auto",
+  background: "rgba(255, 255, 255, 0.012)",
+  borderRadius: "2rem",
+  boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+  backdropFilter: "blur(3.5px)",
+  "-webkit-backdrop-filter": "blur(3.5px)",
+  border: "1px solid rgba(255, 255, 255, 0.35)",
 });
